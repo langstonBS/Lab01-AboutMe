@@ -1,5 +1,5 @@
 //take in imput and send somthing liek a test back out
-
+import { isYes } from './src/isYes.js';
 
 //global Dom elements
 const testButten = document.getElementById('startTest');
@@ -40,12 +40,25 @@ function runTest(){
         return;
     }
 
-    
+    const ingredeants = confirm("do you have the ingredeants");
+    if (ingredeants === false){
+        return;
+    }
 
-   
-    
+    const instructions = confirm("Did you folow the instructions");
+    if (instructions === false){
+        return;
+    } 
 
+    const userAnswer = prompt('is it your favorit meal (yes/no)');
+    const lowerUserAnswer = userAnswer.toLowerCase();
 
+    const userIsCorrect = isYes(lowerUserAnswer);
+    if (userIsCorrect === false){
+        return;
+    }
+
+    resalts = name + "I will be good frinds";
 
 }
 
