@@ -15,7 +15,7 @@ function runTest(){
     //varables from me 
 
     let name = ' ';
-    let score = '';
+    let score = ' ';
 
 
 
@@ -58,7 +58,8 @@ function runTest(){
         return;
     }
 
-    resalts = name + "I will be good frinds";
+    score = name + "I will be good frinds";
+    resalt.textContent = score;
 
 }
 
