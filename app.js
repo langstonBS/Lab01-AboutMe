@@ -18,27 +18,31 @@ function runTest(){
     let score = '';
 
 
+
     //starting allert
-    alert("helow from me ");
+    alert("helo from me,");
 
-    //ask if wants to play 
-    const play = confirm(" do you want to play");
-
-    if (play === false){
-        return;
-    }
-
-    //get name 
+     //get name 
     const firstName = prompt("What's your first name?");
     name = firstName;
     console.log(firstName);
-    
+     
     name = firstName;
-
+ 
     const lastName = prompt("What is your last name");
     name = name + ' ' + lastName;
     console.log(name);
+ 
 
+    //ask if wants to cook 
+    const cooking = confirm("do you want to cook my favorit resipy");
+    if (cooking === false){
+        return;
+    }
+
+    
+
+   
     
 
 
